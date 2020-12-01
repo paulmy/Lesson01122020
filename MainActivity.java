@@ -17,27 +17,29 @@ public class MainActivity extends AppCompatActivity {
     EditText editText;
     Button button;
     String name;
-    int count =0;
+    int count = 0;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.v(MY_TAG, "Creating view...");
         Toast.makeText(getApplicationContext(), "Creating view...", Toast.LENGTH_LONG).show();
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_second); //Подключение разметки
 
         textView = findViewById(R.id.textview);
         editText = findViewById(R.id.edittext);
         button = findViewById(R.id.button);
 
 
-
         Log.v(MY_TAG, "View Created\n" + matrix.matrixToString(matrix.createMatrix(5, 5)));
     }
+
     public void GetName(View view) {
-         name= editText.getText().toString();
+        name = editText.getText().toString();
         //textView.setText("Привет, "+name+"\n" + matrix.matrixToString(matrix.createMatrix(5, 5)));
-        textView.setText("Привет, "+name+"\n" + (count++));
+        textView.setText("Привет, " + name + "\n" + (count++));
     }
+
     @Override
     protected void onStart() {
         Log.v(MY_TAG, "Start Activity");
@@ -87,4 +89,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void Close(View view) {
+        finish();
+
+
+    }
 }
