@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+>
+    <EditText android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:id="@+id/edittext"
+              android:hint="Введите текст"
+              android:textSize="30sp"
+
+    />
+    <Button android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:text="Click me"
+            android:textSize="30sp"
+            android:onClick="GetName"
+
+    />
+    <TextView android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:textSize="30sp"
+              android:id="@+id/textview"
+              android:text="Hello World"
+              android:gravity="center"/>
+
+
+</LinearLayout>
