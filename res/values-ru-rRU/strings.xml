@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Мой проект</string>
+    <string name="hint1" translatable="false">Введите текст</string>
+    <string name="click_me" translatable="false">Нажми меня</string>
+    <string name="hello_world" translatable="false">Привет, Мир</string>
+</resources>
